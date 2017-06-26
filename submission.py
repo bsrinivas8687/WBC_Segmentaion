@@ -8,7 +8,7 @@ from all_params import *
 
 image_names = os.listdir(TEST_DATA_PATH)
 image_names.sort()
-model = get_model()
+model = get_model(train=False)
 model.load_weights(WEIGHTS)
 
 for img_name in image_names:
